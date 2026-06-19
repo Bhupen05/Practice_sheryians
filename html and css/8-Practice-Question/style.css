@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 30% 70%;
+    grid-template-areas: "nav nav nav"
+        "top-left top-right top-right"
+        "bottom bottom bottom";
+}
+
+nav {
+    /* background-color: #de4040; */
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    margin: 0 40px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+nav .logo h1 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+nav .navlink {
+    display: flex;
+    gap: 50px;
+}
+
+nav .navlink h3 {
+    font-size: 17px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+nav .button {
+    display: flex;
+    gap: 20px;
+    margin: 0 40px;
+}
+
+.with {
+    color: blue;
+    background: white;
+    border: 1px solid blue;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.blue {
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: 100;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 20px;
+    transition: all ease 1;
+}
+
+.with:hover {
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: 100;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.blue:hover {
+    color: blue;
+    background: white;
+    border: 1px solid blue;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.top-left {
+    grid-area: top-left;
+    /* background-color: lawngreen;     */
+
+}
+.top-left h1{
+    font-size: 53px;
+    margin: 10px 30px;
+}
+
+.top-right {
+    width: 100%;
+    height: 100%;
+    grid-area: top-right;
+    padding: 20px;
+    margin-top: 15px;
+    /* background-color: blueviolet; */
+}
+
+.top-right .button{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bottom {
+    grid-area: bottom;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    padding-left: 6%;
+    /* padding-top: 50%; */
+    /* background-color: darkgreen; */
+    /* background-image: url(https://i.pinimg.com/1200x/e4/52/50/e452500ae6cfed98291c00b890ed2af0.jpg); */
+}

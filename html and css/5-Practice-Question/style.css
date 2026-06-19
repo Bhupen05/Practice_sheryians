@@ -1,0 +1,65 @@
+@font-face {
+    font-family: apple;
+    src: url(../4-Practice-Question/sf-pro-text_regular.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: apple;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #ffc400;
+}
+
+.main {
+    width: 97%;
+    height: 100%;
+    background: #ffc400;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 50px 0 0 30px;
+}
+
+.cards {
+    width: 200px;
+    height: 250px;
+    background: #F5F3CD;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    margin: 40px 5px;
+}
+
+.cards img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 100px;
+    /* background: #000; */
+    object-fit: contain;
+    position: absolute;
+}
+
+.cards p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.cards button {
+    color: aquamarine;
+    background: #cf3a3a;
+    padding: 5px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+}

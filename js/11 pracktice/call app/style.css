@@ -1,0 +1,147 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+html,body{
+ width: 100%;
+height: 100%;
+    background: #000;
+    color: antiquewhite;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack{
+    width: 400px;
+    height: 290px;   
+    position: relative;
+}
+
+.cards:nth-child(1){
+    z-index: 3;
+}
+.cards:nth-child(2){
+    z-index: 2;
+    transform: translateY(10px) scale(0.93);
+    margin-top: 15px;
+    opacity: 0.9;
+}
+.cards:nth-child(3){
+    z-index: 1;
+    transform: translateY(20px) scale(0.86);
+    margin-top: 30px;
+    opacity: 0.85;
+}
+
+.cards{
+    width: 400px;
+    height: 290px;
+    background: rgb(199, 199, 199);
+    color: #000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 30px;
+    position:absolute;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    top: 0%;
+    left: 0%;
+    transition: all 0.3d ease;
+}
+
+.cards .pic{
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cards .pic img{
+    width: 100%;
+    height: 100%;
+}   
+
+.bottom{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.bottom .right{
+    text-align: right;
+}
+
+.left-button{
+    width: 100px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-button button{
+    padding: 15px;
+    border-radius: 50%;
+     background: transparent;
+     border: 1px solid rgb(114, 104, 104);
+    color: aliceblue;
+    transition: all 0.8s ease;
+}
+.left-button button:hover{
+    background: #49a36e;
+}
+.left-button button:nth-child(1):hover{
+background: #bb4631;
+}
+
+.call{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.call h3:nth-child(1){
+    background: #000;
+    color: aliceblue;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+form{
+    position: absolute;
+    z-index: 10;
+    background: #a71818;
+    width: 500px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    border-radius: 30px;
+    padding: 30px;
+}
+input[type="text"]{
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.but{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.but button{
+    padding: 10px;
+    border-radius: 30px;
+}

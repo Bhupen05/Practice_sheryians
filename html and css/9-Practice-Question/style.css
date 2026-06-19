@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 35% 25% 25%;
+    grid-template-areas: "nav nav nav"
+        "top top top"
+        "left mid-top right"
+        "left mid-bottom right";
+}
+
+nav {
+    grid-area: nav;
+    background-color: darkgreen;
+}
+
+.top {
+    grid-area: top;
+    background-color: darkcyan;
+}
+
+.left {
+    grid-area: left;
+    background-color: darkmagenta;
+}
+
+.right {
+    grid-area: right;
+    background-color: darkred;
+}
+
+.mid-top {
+    grid-area: mid-top;
+    background-color: firebrick;
+}
+
+.mid-bottom {
+    grid-area: mid-bottom;
+    background-color: salmon;
+}
