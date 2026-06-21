@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background: #2a2929;
+    background: url("https://i.pinimg.com/736x/c6/82/15/c682150770561427ffef06d021a62e1c.jpg");
+    /* background-position: center ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+}   
+
+.not{
+    width: 20%;
+    height: 10%;
+    background: #c9c9c813;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15); 
+  
+  /* The blur effect applied to elements behind the panel */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  /* For Safari support */
+
+  
+  /* Optional: Adds a crisp glass border and depth */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
