@@ -120,6 +120,7 @@ inp.addEventListener("input", function () {
 
     if (newuser.length === 0) {
         not.style.display = "block";
+        document.querySelector(".box").style.display="none"
     } else {
         not.style.display = "none";
         showuser(newuser);

@@ -97,4 +97,7 @@ color: antiquewhite;
     display: none;
     color: antiquewhite;
     text-align: center;
-}
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+}   
