@@ -6,7 +6,7 @@
 html,body{
  width: 100%;
 height: 100%;
-    background: #000;
+    background: #1e3968;
     color: antiquewhite;
 }
 .box{
@@ -118,14 +118,15 @@ background: #bb4631;
     cursor: pointer;
 }
 
-form{
+.cardsdetails{
     position: absolute;
     z-index: 10;
-    background: #a71818;
+    background: #6c5f5f;
     width: 500px;
-    height: 800px;
-    display: flex;
+    height: 700px;
+    display: none;
     justify-content: center;
+    align-items: center;
     flex-direction: column;    
     border-radius: 30px;
     padding: 30px;
@@ -140,8 +141,67 @@ input[type="text"]{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .but button{
     padding: 10px;
     border-radius: 30px;
+    width: 100px;
+    border: none    ;
+}
+
+
+.right-button{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.red{
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    border: none;
+}
+
+.green{
+    width: 30px;
+    height: 30px;
+    background: rgb(95, 210, 7);
+    border-radius: 50%;
+    border: none;
+}
+
+.yellow{
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border: none;
+    border-radius: 50%;
+}
+
+input{
+    border: none;
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+samp{
+    text-align: center;
+}
+
+.but
+
+button[type="submit"]{
+    width: 100px;
 }
